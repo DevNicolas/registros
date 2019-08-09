@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Formulario</title>
+	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+  <script src="../js/valida.js"></script>
+
+
+
+
+</head>
+<body>
+
+ <br>
+	<div class="formu">
+
+<!--<img src="icono.png" width="5%" height="5%">-->
+
+ <h2 class="texto"> Formulario</h2>
+  <form name="formulario" method="GET" action="../modelos/datos_model.php">
+
+<!--------------------------------------------------------------------- --> 
+  <p><label>Nombre:<br> <input type="text" name="nombre" ></label><br></p>
+  <p><label>Apellidos:<br> <input type="text" name="apellidos" ></label><br></p>
+
+  <p> Documento: <select name="documento" value="documento">
+      <option>Cedula Ciudadana</option>
+      <option>Tarjeta de Identidad</option>
+      <option>Cedula extranjera</option>
+      <option>Registro Civil</option>
+    </select></p>
+  
+ <p><label>N° documento<br> <input type="text" name="numero" ><br>
+    </label>
+    <br>
+
+<p>Sexo:<select name="sexo" >
+      <option>Masculino</option>
+      <option>Femenino</option>
+ </select> </p>
+
+
+ <p>Fecha de nacimiento: <input type="date" name="fecha">  </p>
+
+
+<p><label>Direcciòn: <input type="text" name="direccion" ></label></p>
+
+
+<p><label>Telefono: <input type="text" name="telefono" ></label></p>
+<br>
+
+<label for="correo"> Tu correo electronico: <input type="email" name="correo" id="correo" placeholder="tucorreo@gmail.com" validate="false" ></label>
+  <input type="hidden" name="txtop">
+ 
+
+<br>
+<br>
+</label><input type="button" name="btnincluir" value="Incluir" onclick="incluir();"><br>
+<br>
+<input type="button"  name="btnguardar" onclick="guardar();" value="Guardar"><br>
+<br>
+<input type="button" name="btnbuscar" onclick="buscar();" value="Buscar"><br>
+<br>
+<input type="button"  name="btnmodificar" onclick="modificar();" value="Modificar" ><br>
+<br>
+<input type="button"  name="btneliminar" onclick="eliminar();" value="Eliminar" ><br>
+<br>
+<input type="button"  name="btncancelar" onclick="cancelar();" value="Cancelar"><br>
+<br>
+
+
+        </form>
+</div>
+    
+<br>
+<br>
+<br>
+<br>
+
+
+
+</body>
+</html>
